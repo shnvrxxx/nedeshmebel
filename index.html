@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мебельная фирма — Мебель, создающая уют</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-box"><img src="img/logo.png" alt="#"></span>
+                <span class="logo-text">
+                    <span class="logo-neg">Не</span><span class="logo-brand">дешёвая мебель</span>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Главная навигация">
+                <ul class="nav-list" id="navList">
+                    <li><a href="#hero" class="active">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Кнопка переключения темы -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Затемнение и мобильное меню (без изменений) -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Мобильное меню">
+        <ul class="nav-list">
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Левая колонка: текст -->
+                <div class="hero-text">
+                    <h1>Мебель, создающая уют</h1>
+                    <p>Индивидуальные решения для вашего дома. Дизайн, качество и комфорт в каждой детали.</p>
+                    <a href="#catalog" class="btn btn-outline">Смотреть каталог &rarr;</a>
+                </div>
+                <!-- Правая колонка: изображение -->
+                <div class="hero-image">
+                    <img src="img/hello-logo.jpg" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+<section class="about fade-section" id="about">
+        <div class="container">
+            <h2 class="section-title">О <span>нас</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                     <p>
+                        <strong>«Недешёвая мебель»</strong> основана <strong>9 ноября 1991 года</strong> мастером 
+                        <strong>Сухановым Михаилом Евгеньевичем</strong>. Вот уже более 30 лет мы доказываем: 
+                        настоящее качество не бывает дешёвым, а мебель, сделанная с душой, способна радовать 
+                        десятилетиями. Каждое изделие несёт в себе тепло рук основателя и философию надёжности, 
+                        проверенную поколениями.
+                    </p>
+                    <p>
+                        Мы работаем только с экологичным деревом и проверенными поставщиками, а современное 
+                        оборудование сочетаем с ручной отделкой. Многоступенчатый контроль на каждом этапе — 
+                        от выбора доски до финишного покрытия — гарантирует, что мебель останется безупречной 
+                        на долгие годы и будет радовать вас каждый день.
+                    </p>
+                    <p>
+                        От первого эскиза до сборки в вашем доме — мы сопровождаем проект лично, без посредников. 
+                        Слушаем, слышим и воплощаем задумки так, чтобы результат всегда превосходил ожидания.
+                    </p>
+                </div> 
+                <div class="about-image">
+                    <img
+                    src="img/comand.png"
+                    alt="Мебель в интерьере"
+                    loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATALOG ===== -->
+    <section class="catalog fade-section" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Наши <span>работы</span></h2>
+            <div class="slider-wrapper" id="catalogSlider">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slider-slide">
+                        <img src="img/catalog/1.jpg" alt="Мебель 1" loading="lazy" />
+                        <div class="slider-caption">Кухня</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="img/catalog/2.jpg" alt="Мебель 2" loading="lazy" />
+                        <div class="slider-caption">Детская</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="img/catalog/3.jpg" alt="Мебель 3" loading="lazy" />
+                        <div class="slider-caption">Гардеробная</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="img/catalog/4.jpg" alt="Мебель 4" loading="lazy" />
+                        <div class="slider-caption">Гостинная</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="img/catalog/5.jpg" alt="Мебель 5" loading="lazy" />
+                        <div class="slider-caption">Кухня</div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="sliderPrev" aria-label="Предыдущий слайд">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="sliderNext" aria-label="Следующий слайд">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADVANTAGES ===== -->
+    <section class="advantages fade-section" id="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему <span>выбирают нас</span></h2>
+            <div class="advantages-grid">
+                <div class="advantage-card fade-item">
+                    <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+                    <h3>Индивидуальный дизайн</h3>
+                    <p>Разрабатываем уникальные проекты с учётом ваших пожеланий и стиля интерьера.</p>
+                </div>
+                <div class="advantage-card fade-item">
+                    <span class="icon"><i class="fas fa-leaf"></i></span>
+                    <h3>Экологичные материалы</h3>
+                    <p>Используем только сертифицированные материалы, безопасные для вашего здоровья.</p>
+                </div>
+                <div class="advantage-card fade-item">
+                    <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                    <h3>Гарантия 5 лет</h3>
+                    <p>Уверены в качестве — даём расширенную гарантию на всю продукцию.</p>
+                </div>
+                <div class="advantage-card fade-item">
+                    <span class="icon"><i class="fas fa-truck"></i></span>
+                    <h3>Доставка и сборка</h3>
+                    <p>Бесплатная доставка по городу и профессиональная сборка мебели.</p>
+                </div>
+                <div class="advantage-card fade-item">
+                    <span class="icon"><i class="fas fa-clock"></i></span>
+                    <h3>Соблюдение сроков</h3>
+                    <p>Чётко соблюдаем оговоренные сроки, без задержек и опозданий.</p>
+                </div>
+                <div class="advantage-card fade-item">
+                    <span class="icon"><i class="fas fa-headset"></i></span>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Всегда на связи, чтобы ответить на вопросы и помочь с выбором.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials fade-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Отзывы</h2>
+            <div class="testimonials-carousel" id="testimonialsCarousel">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <!-- Отзывы (без изменений) -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">А</div>
+                                <div>
+                                    <div class="testimonial-name">Анна Иванова</div>
+                                    <div class="testimonial-city">Новочеркасск</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">«Заказывала кухонный гарнитур — результат превзошёл все ожидания! Дизайнер учла все мои пожелания, качество исполнения на высоте. Спасибо всей команде!»</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">М</div>
+                                <div>
+                                    <div class="testimonial-name">Михаил Петров</div>
+                                    <div class="testimonial-city">Ростов-на-Дону</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">«Заказывали спальню и гостиную. Очень довольны! Мебель выглядит дорого и стильно, при этом цена приятно удивила. Обязательно обратимся ещё.»</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">Е</div>
+                                <div>
+                                    <div class="testimonial-name">Елена Смирнова</div>
+                                    <div class="testimonial-city">Таганрог</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">«Отличная работа! Сделали детскую комнату по моему эскизу. Ребёнок в восторге. Всё сделано аккуратно и в срок. Рекомендую!»</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">Д</div>
+                                <div>
+                                    <div class="testimonial-name">Дмитрий Козлов</div>
+                                    <div class="testimonial-city">Азов</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">«Заказывал кабинетную мебель. Всё сделано качественно, с учётом всех нюансов. Отдельное спасибо за консультацию и помощь в выборе материалов.»</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-controls">
+                    <button id="testimonialPrev" aria-label="Предыдущий отзыв"><i class="fas fa-chevron-left"></i></button>
+                    <button id="testimonialNext" aria-label="Следующий отзыв"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTS (обновлён) ===== -->
+    <section class="contacts fade-section" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-grid">
+                <!-- Левая часть: адрес, телефон, email, карта (без изменений) -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Ростовская обл., г. Новочеркасск, ул. Первомайская, д. 97</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <a href="tel:+74951234567">+7 (951) 829-77-00</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <a href="mailto:info@mebel-firma.ru">sme240670@yandex.ru</a>
+                    </div>
+                    <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.8343527091583!2d40.071415311835196!3d47.41517207105267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e249ecb8f4d597%3A0x4ba2ba47ada5a93b!2z0J_QtdGA0LLQvtC80LDQudGB0LrQsNGPIDk3!5e0!3m2!1sru!2sru!4v1782164726132!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Правая часть: ТЕЛЕГРАМ-БОТ + QR-код (вместо формы) -->
+        <div class="contact-telegram">
+            <h3 class="telegram-title">Свяжитесь с нами в Telegram</h3>
+            <p class="telegram-desc">Задайте вопрос, получите консультацию или оформите заказ прямо в мессенджере.</p>
+            <a href="https://t.me/NedeshMebel_bot" target="_blank" rel="noopener noreferrer" class="btn btn-orange telegram-btn">
+                <i class="fab fa-telegram-plane"></i> Перейти в бота
+            </a>
+            <div class="qr-container">
+                <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://t.me/NedeshMebel_bot"
+                alt="QR-код для перехода в Telegram-бота"
+                class="qr-image"
+                loading="lazy"
+            />
+                <p class="qr-hint">Отсканируйте QR-код камерой телефона</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <p>
+            <span class="footer-brand">Недешёвая мебель</span> &mdash; мебель, создающая уют.
+        </p>
+        <p style="margin-top: 6px;">
+            &copy; <span id="footerYear">2026</span> Недешёвая мебель. Все права защищены.
+        </p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
