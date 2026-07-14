@@ -5,7 +5,7 @@
 
 ## 🔗 Ссылки
 
-- 🎯 [Живой сайт](чуть позже) 
+- 🎯 [Живой сайт](https://shnvrxxx.github.io/nedeshmebel/) 
 - 🤖 [Telegram-бот](https://t.me/NedeshMebel_bot) — для консультаций и заказов
 
 ## 🛠 Технологии
